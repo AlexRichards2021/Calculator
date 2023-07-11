@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 0.1em solid black;
+    width: auto;
+    height: auto;
+
+}
+
+.output{
+    display: flex;
+    justify-content: end;
+    padding: 1em 0.1em;
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+    overflow-x:scroll;
+    font-size: 2em
+
+}
+button{
+    width:2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: rgba(255, 165, 0, 1);
+    transition: 0.1s;
+    font-size: 2.5em
+
+}
+button:hover{
+    background-color: rgba(255, 165, 0, 0.8);
+
+}
+
+button:active{
+    background-color: rgba(255, 165, 0 , 0);
+    border: 1px solid grey;
+}
+.buttons{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-around;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding: 5px;
+}
+
+
+@media screen and (min-width:600px){
+    .container{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:700px){
+ .calculator{
+    display: flex;
+    justify-content: space-around;
+ }
+ .history{
+    padding-left:1em;
+ }
+}
+
+@media screen and (max-width:350px){
+    .calculator{
+        overflow-x: scroll;
+            min-width: 350px
+    }
+}
