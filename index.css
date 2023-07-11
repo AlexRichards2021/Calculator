@@ -1,10 +1,9 @@
+
 .container{
     display: flex;
     flex-direction: column;
     border: 0.1em solid black;
     width: auto;
-    height: auto;
-
 }
 
 .output{
@@ -18,8 +17,8 @@
 
 }
 button{
-    width:2.5em;
-    height: 2.5em;
+    width:2em;
+    height: 2em;
     border-radius: 100%;
     border: 1px solid black;
     background-color: rgba(255, 165, 0, 1);
