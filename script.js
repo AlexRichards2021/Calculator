@@ -13,7 +13,7 @@ let hasDecimal = false;
 // on click functions
 
 function backOnClickHande() {
-    if (calcOutput.innerHTML !== 'PlaceHolder') {
+    if (calcOutput.innerHTML !== '') {
         let length = calcOutput.innerHTML.length
         if (calcOutput.innerHTML[length - 1] === '.') {
             hasDecimal = false
@@ -33,7 +33,7 @@ function allClearOnClickHandle() {
 }
 
 function equalsOnClickHandler() {
-    if (calcOutput.innerText === 'PlaceHolder' || calcOutput.innerHTML === '') {
+    if (calcOutput.innerText === '' || calcOutput.innerHTML === '') {
         alert("Try hitting numbers first! ")
     }
     else {
